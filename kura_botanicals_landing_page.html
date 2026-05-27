@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kura Botanicals | Bio-Brew Breakfast Pods</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kura: {
+                            green: '#2e5c3e',
+                            gold: '#c6a43f',
+                            cream: '#f9f5eb',
+                            dark: '#1a1a1a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom styles for elements that need specific tweaks beyond Tailwind classes */
+        .glass-nav {
+            background: rgba(249, 245, 235, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero-pattern {
+            background-color: #2e5c3e;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c6a43f' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-kura-cream text-kura-dark font-sans antialiased selection:bg-kura-gold selection:text-white">
+
+    <nav class="fixed w-full z-50 glass-nav border-b border-kura-gold/20 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-serif text-2xl font-bold text-kura-green tracking-tight">
+                        KURA<span class="text-kura-gold font-sans font-light text-xl ml-1">BOTANICALS</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-kura-dark hover:text-kura-green font-medium transition-colors">Home</a>
+                    <a href="#product" class="text-kura-dark hover:text-kura-green font-medium transition-colors">The Product</a>
+                    <a href="#contact" class="text-kura-dark hover:text-kura-green font-medium transition-colors">Contact</a>
+                    <a href="#buy" class="bg-kura-green text-white px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 border border-transparent hover:border-kura-gold">
+                        Buy Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-kura-dark hover:text-kura-green focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-kura-cream border-b border-kura-gold/20 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#home" class="block px-3 py-3 rounded-md text-base font-medium text-kura-dark hover:bg-kura-green/10 hover:text-kura-green">Home</a>
+                <a href="#product" class="block px-3 py-3 rounded-md text-base font-medium text-kura-dark hover:bg-kura-green/10 hover:text-kura-green">The Product</a>
+                <a href="#contact" class="block px-3 py-3 rounded-md text-base font-medium text-kura-dark hover:bg-kura-green/10 hover:text-kura-green">Contact</a>
+                <a href="#buy" class="block mt-4 text-center bg-kura-green text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 shadow-md">
+                    Buy Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-pattern min-h-[90vh] flex items-center">
+        <!-- Decorative Background Elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-kura-gold opacity-10 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-kura-cream opacity-10 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-6 text-center lg:text-left mb-16 lg:mb-0">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-kura-gold/20 text-kura-cream font-medium text-sm mb-6 border border-kura-gold/30 backdrop-blur-sm">
+                        New Release
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
+                        Bio-Brew <br/>
+                        <span class="text-kura-gold italic">Breakfast Pods</span>
+                    </h1>
+                    <p class="text-xl text-kura-cream/90 mb-8 font-light max-w-2xl mx-auto lg:mx-0">
+                        Fuel Your Desk-Fast. A revolutionary, nutrient-dense morning brew designed for the busy professional. Sustainable energy, optimized focus.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#buy" class="bg-kura-gold text-kura-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Shop Now
+                        </a>
+                        <a href="#product" class="bg-transparent text-white border border-white/30 px-8 py-4 rounded-full font-medium text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+                            Explore Benefits <i class="fas fa-arrow-down text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500 border-4 border-kura-gold/20">
+                        <div class="absolute inset-0 bg-gradient-to-t from-kura-dark/40 to-transparent z-10"></div>
+                        <!-- Placeholder for packaging image -->
+                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Kura Botanicals Bio-Brew Breakfast Pods Packaging" 
+                             class="w-full h-auto object-cover aspect-square sm:aspect-[4/3] lg:aspect-square">
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute bottom-6 right-6 z-20 bg-white p-4 rounded-xl shadow-xl flex items-center gap-3 animate-bounce-slow">
+                            <div class="bg-kura-green text-white p-2 rounded-full">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-xs text-gray-500 uppercase tracking-wider font-bold">100% Natural</p>
+                                <p class="text-kura-dark font-serif font-semibold">Botanical Blend</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white border-b border-kura-gold/10 relative z-20 -mt-10 rounded-t-3xl mx-4 sm:mx-8 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <!-- Benefit 1 -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-kura-cream flex items-center justify-center mb-4 text-kura-green group-hover:bg-kura-green group-hover:text-white transition-colors duration-300 shadow-sm border border-kura-gold/20">
+                        <i class="fas fa-seedling text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif font-semibold text-kura-dark text-lg">100% Organic</h3>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-kura-cream flex items-center justify-center mb-4 text-kura-green group-hover:bg-kura-green group-hover:text-white transition-colors duration-300 shadow-sm border border-kura-gold/20">
+                        <i class="fas fa-wheat-awn-circle-exclamation text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif font-semibold text-kura-dark text-lg">Gluten-Free</h3>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-kura-cream flex items-center justify-center mb-4 text-kura-green group-hover:bg-kura-green group-hover:text-white transition-colors duration-300 shadow-sm border border-kura-gold/20">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif font-semibold text-kura-dark text-lg">Plant-Based</h3>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-kura-cream flex items-center justify-center mb-4 text-kura-green group-hover:bg-kura-green group-hover:text-white transition-colors duration-300 shadow-sm border border-kura-gold/20">
+                        <i class="fas fa-bacteria text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif font-semibold text-kura-dark text-lg">Probiotic Rich</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="py-24 bg-kura-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-kura-gold font-bold tracking-widest uppercase text-sm mb-2 block">The Science of Morning</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-kura-dark mb-6">Redefining Your Morning Ritual</h2>
+                <div class="w-24 h-1 bg-kura-green mx-auto mb-6 rounded-full"></div>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Say goodbye to midday crashes and jittery starts. The Bio-Brew Breakfast Pod is meticulously crafted with adaptogenic herbs, sustainable plant proteins, and gut-friendly probiotics to deliver smooth, lasting energy right at your desk.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <!-- Product Image Grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Botanical Ingredients" class="rounded-2xl shadow-lg w-full h-48 object-cover transform translate-y-8">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Morning Brew" class="rounded-2xl shadow-lg w-full h-64 object-cover">
+                </div>
+
+                <!-- Product Text -->
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-kura-gold/20 flex items-center justify-center text-kura-gold border border-kura-gold">
+                            <span class="font-bold">01</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-serif font-bold text-kura-dark mb-2">Instant Nutrition</h4>
+                            <p class="text-gray-600">Pop a pod into hot water or your favorite milk alternative. Dissolves instantly to create a rich, creamy, and satiating beverage.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-kura-green/20 flex items-center justify-center text-kura-green border border-kura-green">
+                            <span class="font-bold">02</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-serif font-bold text-kura-dark mb-2">Sustained Focus</h4>
+                            <p class="text-gray-600">Infused with Lion's Mane and L-Theanine to promote mental clarity without the anxiety associated with traditional high-caffeine drinks.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-kura-gold/20 flex items-center justify-center text-kura-gold border border-kura-gold">
+                            <span class="font-bold">03</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-serif font-bold text-kura-dark mb-2">Gut Harmonizing</h4>
+                            <p class="text-gray-600">Contains 5 billion CFU of heat-resistant probiotics to support digestive health and immunity, crucial for overall well-being.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-kura-green relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23f9f5eb\' fill-opacity=\'1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <i class="fas fa-quote-left text-4xl text-kura-gold mb-6 opacity-50"></i>
+            <h2 class="text-3xl md:text-4xl font-serif font-medium text-white leading-relaxed mb-10">
+                "Bio-Brew completely changed my mornings. I used to skip breakfast and crash by 11 AM. Now, I have one pod at my desk, and I'm focused and energized until lunch. It tastes incredible, too."
+            </h2>
+            
+            <div class="flex flex-col items-center justify-center gap-4">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah J." class="w-16 h-16 rounded-full border-2 border-kura-gold object-cover">
+                <div>
+                    <p class="text-white font-bold font-serif text-lg">Sarah Jenkins</p>
+                    <p class="text-kura-cream/70 text-sm">Creative Director</p>
+                </div>
+                <div class="flex text-kura-gold text-sm mt-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="buy" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-kura-cream rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-between border border-kura-gold/20 shadow-xl relative overflow-hidden">
+                <!-- Decorative Circle -->
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-kura-gold rounded-full opacity-10"></div>
+                
+                <div class="md:w-1/2 mb-8 md:mb-0 relative z-10">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-kura-dark mb-4">Ready to fuel your desk-fast?</h2>
+                    <p class="text-gray-600 mb-6 text-lg">Start your subscription today and get 15% off your first order of Bio-Brew pods.</p>
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="text-2xl font-bold text-kura-green">$34.00</span>
+                        <span class="text-sm text-gray-500 line-through">$40.00</span>
+                        <span class="bg-kura-gold/20 text-kura-dark text-xs px-2 py-1 rounded font-bold uppercase tracking-wider">Pack of 14</span>
+                    </div>
+                    
+                    <button class="w-full sm:w-auto bg-kura-green text-white px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-3">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </button>
+                    <p class="text-xs text-gray-500 mt-4 text-center sm:text-left"><i class="fas fa-check-circle text-kura-green mr-1"></i> Free shipping on orders over $50</p>
+                </div>
+                
+                <div class="md:w-5/12 relative z-10">
+                     <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bio-Brew Box" class="rounded-xl shadow-md w-full object-cover border border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-kura-dark pt-20 pb-10 border-t-4 border-kura-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                
+                <!-- Brand Info -->
+                <div class="col-span-1 md:col-span-1">
+                    <a href="#" class="font-serif text-2xl font-bold text-white tracking-tight mb-4 inline-block">
+                        KURA<span class="text-kura-gold font-sans font-light text-xl ml-1">BOTANICALS</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Crafting functional, botanical-driven nourishment for the modern professional. Elevate your daily rituals.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-kura-gold transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-kura-gold transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-kura-gold transition-colors">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-serif font-semibold mb-6">Shop</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Bio-Brew Pods</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Starter Kits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Accessories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-white font-serif font-semibold mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Wholesale</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-white font-serif font-semibold mb-6">Stay Updated</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe for nutrition tips and exclusive offers.</p>
+                    <form class="flex flex-col gap-3">
+                        <input type="email" placeholder="Email address" class="bg-gray-800 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-kura-gold border border-gray-700 text-sm">
+                        <button type="button" class="bg-kura-gold text-kura-dark font-medium px-4 py-3 rounded-md hover:bg-white transition-colors text-sm">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    &copy; 2026 Kura Botanicals. All rights reserved.
+                </p>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Navbar blur effect on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.replace('border-transparent', 'border-kura-gold/20');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.replace('border-kura-gold/20', 'border-transparent');
+            }
+        });
+
+        // Optional: Simple animation for elements coming into view
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Add CSS for fade-in elements
+        const style = document.createElement('style');
+        style.textContent = `
+            .fade-in-up {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Apply to sections
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('fade-in-up');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
